@@ -28,7 +28,7 @@ type Props = {
   className?: string;
 };
 
-function PackageCard({ pkg }: { pkg: PackageCardData }) {
+export function PackageCard({ pkg }: { pkg: PackageCardData }) {
   return (
     <article
       className={cn(

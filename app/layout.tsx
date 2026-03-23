@@ -13,7 +13,7 @@ const sans = Inter({
 export const metadata: Metadata = {
   title: "The Vacation Voice | Premium Travel",
   description:
-    "Expert-led, AI-powered multi-day tours. Personalised packages, activities, and seamless booking.",
+    "Global travel company for curated holidays, honeymoons, and tours across six continents. Hand-picked stays, trusted partners, and end-to-end support.",
 };
 
 export default function RootLayout({

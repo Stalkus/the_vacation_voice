@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const collageLeft: { src: string; alt: string; wrap: string; img: string }[] = [
   {
-    src: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800&auto=format&fit=crop",
-    alt: "Venice canals",
+    src: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800&auto=format&fit=crop",
+    alt: "Ubud rice terraces",
     wrap: "relative -rotate-6",
     img: "rounded-2xl shadow-sm ring-4 ring-white transition-all duration-200",
   },
   {
-    src: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800&auto=format&fit=crop",
-    alt: "Taj Mahal",
+    src: "https://images.unsplash.com/photo-1544644181-3ac98e9e0ed9?q=80&w=800&auto=format&fit=crop",
+    alt: "Tropical coast in Bali",
     wrap: "relative translate-x-6 -translate-y-8 rotate-3",
     img: "rounded-2xl shadow-sm ring-4 ring-white transition-all duration-200",
   },
@@ -20,14 +20,14 @@ const collageLeft: { src: string; alt: string; wrap: string; img: string }[] = [
 
 const collageRight: { src: string; alt: string; wrap: string; img: string }[] = [
   {
-    src: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop",
-    alt: "Paris skyline",
+    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop",
+    alt: "Beach in Bali",
     wrap: "relative rotate-2",
     img: "rounded-2xl shadow-sm ring-4 ring-white transition-all duration-200",
   },
   {
-    src: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800&auto=format&fit=crop",
-    alt: "Alpine lake",
+    src: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=800&auto=format&fit=crop",
+    alt: "Temple in Bali",
     wrap: "relative -translate-x-4 -translate-y-10 -rotate-3",
     img: "rounded-2xl shadow-sm ring-4 ring-white transition-all duration-200",
   },
@@ -124,8 +124,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground md:text-5xl lg:text-6xl"
             >
-              Your Tour, Perfectly{" "}
-              <span className="text-primary">Personalised!</span>
+              Your world,{" "}
+              <span className="text-primary">crafted for you</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -133,7 +133,7 @@ export default function Hero() {
               transition={{ delay: 0.12 }}
               className="mt-2 max-w-lg text-base text-zinc-500 md:mx-auto md:text-lg lg:mx-0"
             >
-              Explore Expert-led, AI-powered multi-day tours.
+              Global holidays, hand-picked stays, and seamless planning—so every trip feels unmistakably yours.
             </motion.p>
           </div>
 

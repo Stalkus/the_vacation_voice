@@ -69,7 +69,7 @@ export const internationalMegaColumns: MegaColumn[] = [
   {
     title: "Honeymoon tour packages",
     links: [
-      { label: "Bali Honeymoon Packages", href: "/packages/international/bali" },
+      { label: "Bali Honeymoon Packages", href: "/states/bali/honeymoon" },
       { label: "Maldives Honeymoon Packages", href: "/packages/international/maldives" },
       { label: "Mauritius Honeymoon", href: "/packages/international/mauritius" },
       { label: "Seychelles Honeymoon", href: "/packages/international/seychelles" },
