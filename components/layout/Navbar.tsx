@@ -81,8 +81,16 @@ export default function Navbar() {
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link href="/hot-deals" className={flatNavClass}>
-                  Hot deals
+                <Link href="/flights" className={flatNavClass}>
+                  Flights
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Link href="/holiday" className={flatNavClass}>
+                  Holiday
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -113,10 +121,16 @@ export default function Navbar() {
               Exclusive
             </Link>
             <Link
-              href="/hot-deals"
+              href="/flights"
               className="whitespace-nowrap rounded-md px-2 py-1.5 text-xs font-semibold text-foreground/85 transition-colors hover:text-primary"
             >
-              Deals
+              Flights
+            </Link>
+            <Link
+              href="/holiday"
+              className="whitespace-nowrap rounded-md px-2 py-1.5 text-xs font-semibold text-foreground/85 transition-colors hover:text-primary"
+            >
+              Holiday
             </Link>
           </nav>
         </div>

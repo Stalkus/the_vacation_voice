@@ -24,8 +24,8 @@ const company = [
 ] as const;
 
 const travellers = [
-  { label: "Holiday packages", href: "/packages" },
-  { label: "Hot deals", href: "/hot-deals" },
+  { label: "Holiday packages", href: "/holiday" },
+  { label: "Flights", href: "/flights" },
   { label: "Travel guides", href: "/guides" },
   { label: "Visa & entry tips", href: "/visa" },
   { label: "Corporate & MICE", href: "/corporate" },
