@@ -1,0 +1,35 @@
+---
+description: UI/UX — Tailwind, shadcn, Linear-style minimalism, spacing and polish
+alwaysApply: true
+---
+
+# UI/UX & design system
+
+## Styling
+
+- Use **Tailwind CSS** for all styling (no ad-hoc inline styles except unavoidable cases like dynamic values).
+- **Aesthetic**: Modern, minimalist, Linear.app–inspired: high contrast, generous whitespace, crisp typography.
+- **Components**: Prefer **@shadcn/ui** primitives from `components/ui` (`Button`, `Input`, `Card`, etc.). Do **not** ship raw `<button>` / `<input>` for UI chrome—wrap or extend shadcn components.
+
+## Spacing (4px grid)
+
+- Treat spacing as multiples of **4px** (`gap-1` = 4px). Prefer **`gap-6`** between major sections/blocks and **`gap-2`** for tight groups (label + control, icon + text).
+
+## Color
+
+- **CTAs / primary actions**: `bg-primary text-primary-foreground` (tokens map to `hsl(var(--primary))` in `app/globals.css`).
+- **Surfaces**: Light areas — subtle **`bg-zinc-50`**; dark sections — **`bg-slate-950`** (or theme `background` / `card` when matching existing pages).
+
+## Interaction polish
+
+- On interactive elements (buttons, links styled as buttons, cards with hover, inputs): include **`transition-all`**, **`duration-200`**, and subtle **`shadow-sm`** (add **`hover:`** / **`focus-visible:`** variants where it improves feedback).
+
+## Examples
+
+```tsx
+// ✅ Primary CTA
+<Button className="shadow-sm transition-all duration-200">Book</Button>
+
+// ❌ Avoid for app UI
+<button className="rounded px-4 py-2">Book</button>
+```
